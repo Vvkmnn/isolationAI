@@ -5,7 +5,7 @@ The second project in the [Artificial Intelligence Nanodegree program](https://c
 ![](screencap.gif)
 
 ## Methodology
-This was implemented via the **Minimax**, **Iterative Deepening**, and **Alpha Beta pruning**, which organizes games into opposing turns maximizing or minimizing their own evaluation function, maximizing on that players that turn. From there, it's a matter of developing your own unique **Heuristics** to help improve performance (by allowing one to approximate the value of different board states via different **evaluation functions**). This component of the project is detailed below, alongside the test and learn results. 
+This was implemented via the **Minimax**, **Iterative Deepening**, and **Alpha Beta pruning**, which organizes games into trees of plys (moves) that focus on maximizing a players given score at the current move (or minimizing it from the perspective of a different player). By searching all the way through until the terminal state (or approximating at as best we cane in the time we have) we can pass thos values back up the tree to know the expected score from a given move. To get said score, it's a matter of developing your own unique **Heuristics** to help improve performance (by allowing one to approximate the score of different board states via different **evaluation functions** that may or may not punish particular states). This component of the project is detailed below, alongside the test-and-learn results. 
 
 ## Heuristics
 
